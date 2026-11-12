@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Інтерактивні Анімації на JavaScript</title>
+  <!-- Підключення зовнішнього файлу стилів -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Керування Анімаціями на JavaScript</h1>
+
+  <div class="container">
+    
+    <!-- Сцена 1: Рух квадрата (requestAnimationFrame) -->
+    <div class="card">
+      <h2>1. Траєкторія руху (requestAnimationFrame)</h2>
+      <div class="stage" id="stage1">
+        <div class="box" id="box1"></div>
+      </div>
+      <div class="controls">
+        <button id="btnStartMove">Старт</button>
+        <button id="btnPauseMove">Пауза</button>
+        <button id="btnResetMove">Скинути</button>
+      </div>
+    </div>
+
+    <!-- Сцена 2: Обертання та масштабування (JS Inline Styles) -->
+    <div class="card">
+      <h2>2. Обертання та масштаб (JS Style Mutation)</h2>
+      <div class="stage">
+        <div class="box" id="box2"></div>
+      </div>
+      <div class="controls">
+        <button id="btnRotate">Обертати</button>
+        <button id="btnScale">Збільшити</button>
+        <button id="btnResetTransform">Скинути</button>
+      </div>
+    </div>
+
+    <!-- Сцена 3: Пульсація / Перемикання класів через JS -->
+    <div class="card">
+      <h2>3. Пульсація (Перемикання CSS класів)</h2>
+      <div class="stage">
+        <div class="circle" id="circle1"></div>
+      </div>
+      <div class="controls">
+        <button id="btnTogglePulse">Увімкнути / Вимкнути</button>
+        <button id="btnSpeedUp">Прискорити</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Підключення зовнішнього файлу скрипту -->
+  <script src="script.js"></script>
+</body>
+</html>
